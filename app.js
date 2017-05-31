@@ -10,10 +10,15 @@ client.connect();
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
+app.listen(port, function () {
+    console.log('Example app listening on port ' + port);
+});
+
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-app.listen(port, function () {
-    console.log('Example app listening on port ' + port);
+app.get('/authors', function (req, res) {
+    res.sendFile(__dirname + '/views/authors.html');
 });
+
