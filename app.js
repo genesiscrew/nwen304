@@ -22,3 +22,19 @@ app.get('/authors', function (req, res) {
     res.sendFile(__dirname + '/views/authors.html');
 });
 
+app.get('/books', function (req, res) {
+    res.sendFile(__dirname + '/views/books.html');
+});
+
+app.get('/genres', function (req, res) {
+    res.sendFile(__dirname + '/views/genres.html');
+});
+
+app.get('/index', function (req, res) {
+    res.sendFile(__dirname + '/views/index.html');
+});
+
+app.get('/search', function (req, res) {
+    res.sendFile(__dirname + '/views/search.html');
+});
+
