@@ -16,7 +16,8 @@
 		<div class="container_searchbar">
 			Search: <input type="text" id="search" placeholder="Please enter in search here">
 			<a href="/search" class="btn btn-info" role="button">Search</a>
-			<a href="/register" class="btn btn-info" role="button">Register</a> 
+			<a href="/register" class="btn btn-info" role="button">Register</a>
+			<a href="/login" class="btn btn-info" role="button">Login</a>
 		</div>
 		<div  class="button-strip">
 			<a href="/" class="btn btn-info" role="button">Home</a> 
@@ -28,18 +29,15 @@
 	</header>
 	
 	<div class="container">
-   	<h2>Welcome to the Register Page</h2>
-   		<form action="/register" method="post">
-   			<h3>First Name:</h3>
-				<input name="firstname" type="text" id="firstname" placeholder="Please enter in your first name"><br>
-				<h3>Last Name:</h3>
-				<input name="lastname" type="text" id="lastname" placeholder="Please enter in your last name"><br>
-				<h3>Username:</h3>
+   	<h2>Welcome to the Login Page</h2>
+   		<form action="/userLogin" method="get">
+			<h3>Username:</h3>
 				<input name="username" type="text" id="username" placeholder="Please enter in your username"><br>
-				<h3>Password:</h3>
+			<h3>Password:</h3>
 				<input name="password" type="password" id="password" placeholder="Please enter in your password"><br><br>
-				<button type="submit">Submit</button> 
-			</form>	
+				
+			<button type="submit">Login</button>
+		 </form>
 	</div>
 
 	<footer>

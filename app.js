@@ -75,3 +75,28 @@ app.post('/register', function (req, res) {
   /*redirect is for if we want it to go back to the homepage after registering.*/
   res.redirect("/");
 });
+
+app.get('/login', function (req, res) {
+    res.render('login', {
+    });
+});
+
+app.get('/userLogin', function (req, res) {
+    var username = req.body.username;
+    var password = req.body.password;
+
+    console.log(username);
+    console.log(password);
+
+    var queryString = "SELECT case ";
+    var query = client.query(queryString);
+    query.on('end', function () {
+        res.sendStatus(200);
+    })
+    query.on('error', function(err) {
+        console.log(err);
+    });
+    /*redirect is for if we want it to go back to the homepage after registering.*/
+    res.redirect("/");
+});
+
