@@ -58,19 +58,20 @@ app.post('/register', function (req, res) {
   var username = req.body.username;
   var password = req.body.password;
   
-  var queryString = "insert into userinfo (firstname,lastname,username,password) values ('" + firstname + "','" + lastname + "','" + username + "','" + password + "',)";
-    var query = client.query(queryString);
-    query.on('end', function () {
-        res.sendStatus(200);
-    })
-    query.on('error', function(err) {
-        console.log(err);
-    });
-      console.log(firstname);
-      console.log(lastname);
-      console.log(username);
-      console.log(password);
-      
-      /*redirect is for if we want it to go back to the homepage after registering.*/
-      res.redirect("/");
+  var queryString = "insert into userinfo (firstname,lastname,username,password) values ('" + firstname + "','" + lastname + "','" + username + "','" + password + "')";
+  var query = client.query(queryString);
+  query.on('end', function () {
+      res.sendStatus(200);
+  })
+  query.on('error', function(err) {
+      console.log(err);
+  });
+  
+  console.log(firstname);
+  console.log(lastname);
+  console.log(username);
+  console.log(password);
+  
+  /*redirect is for if we want it to go back to the homepage after registering.*/
+  res.redirect("/");
 });
