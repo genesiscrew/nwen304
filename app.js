@@ -88,7 +88,7 @@ app.get('/userLogin', function (req, res) {
     console.log(username);
     console.log(password);
 
-    var queryString = "SELECT case ";
+    var queryString = "select exists (select true from userinfo where username = '"+username+"' and password = '"+password+"');";
     var query = client.query(queryString);
     query.on('end', function () {
         res.sendStatus(200);
