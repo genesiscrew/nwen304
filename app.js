@@ -9,6 +9,9 @@ var client = new pg.Client(connectionString);
 client.connect();
 
 app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(bodyParser.json());
 
 app.set('views', path.join(__dirname, 'views'));
@@ -44,3 +47,14 @@ app.get('/search', function (req, res) {
     });
 });
 
+app.get('/register', function (req, res) {
+    res.render('register', {
+    });
+});
+
+app.post('/register', function (req, res) {
+  var firstname = req.body.firstname;
+      console.log(firstname);
+      /*redirect is for if we want it to go back to the homepage after registering.*/
+      res.redirect("/");
+});
