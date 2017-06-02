@@ -37,6 +37,7 @@ p {
 .container_searchbar {
 	position: absolute;
 	right: 5%;
+	color: #BC3315;
   /*margin-left: 1000px;*/ 
 }
 
