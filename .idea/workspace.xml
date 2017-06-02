@@ -67,8 +67,8 @@
       <file leaf-file-name="books.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/books.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="840" lean-forward="false" selection-start-line="39" selection-start-column="840" selection-end-line="39" selection-end-column="840" />
+            <state relative-caret-position="570">
+              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -308,12 +308,12 @@
       <option name="presentableId" value="Default" />
       <updated>1496286586142</updated>
       <workItem from="1496286587618" duration="3177000" />
-      <workItem from="1496365604533" duration="3767000" />
+      <workItem from="1496365604533" duration="3882000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6944000" />
+    <option name="totallyTimeSpent" value="7059000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1912" height="1045" extended-state="4" />
@@ -479,8 +479,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/books.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="840" lean-forward="false" selection-start-line="39" selection-start-column="840" selection-end-line="39" selection-end-column="840" />
+        <state relative-caret-position="570">
+          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
           <folding />
         </state>
       </provider>
