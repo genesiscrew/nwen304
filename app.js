@@ -3,6 +3,7 @@ var app = express();
 var port = process.env.PORT || 8080;
 var pg = require('pg');
 var path = require('path');
+var passport = require('passport-facebook');
 var bodyParser = require('body-parser');
 var connectionString = process.env.DATABASE_URL||"postgres://mirandange:300323076@depot:5432/mirandange_jdbc";
 var client = new pg.Client(connectionString);
@@ -10,8 +11,8 @@ client.connect();
 
 var Strategy	=	require('passport-facebook').Strategy;
 passport.use(new	FacebookStrategy({
-clientID:	1318994721499964,
-clientSecret:	●●●●●●●●,
+clientID:	'1318994721499964',
+clientSecret:	'419b5142fda611cc073f398fb03b5761',
 callbackURL:	"https://bookwork-storybook-bookstore.herokuapp.com/auth/facebook/callback"
 },
 
