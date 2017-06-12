@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JelloSpeedGeek/Bookstore.git"
+    "url": "https://github.com/genesiscrew/nwen304"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JelloSpeedGeek/Bookstore/issues"
+    "url": "https://github.com/genesiscrew/nwen304/Bookstore/issues"
   },
-  "homepage": "https://github.com/JelloSpeedGeek/Bookstore#readme",
+  "homepage": "https://github.com/genesiscrew/nwen304/Bookstore#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
