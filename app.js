@@ -6,9 +6,9 @@ var path = require('path');
 //var passport = require('passport-facebook');
 var bodyParser = require('body-parser');
 var connectionString = process.env.DATABASE_URL//||"postgres://mirandange:300323076@depot:5432/mirandange_jdbc";
-var client = new pg.Client(connectionString);
+/*var client = new pg.Client(connectionString);
 client.connect();
-
+*/
 /*var Strategy	=	require('passport-facebook').Strategy;
 passport.use(new	FacebookStrategy({
 clientID:	'1318994721499964',
@@ -75,7 +75,7 @@ app.get('/register', function (req, res) {
     res.render('register', {
     });
 });
-
+/*
 app.post('/register', function (req, res) {
   var firstname = req.body.firstname;
   var lastname = req.body.lastname;
@@ -98,14 +98,14 @@ app.post('/register', function (req, res) {
   
   /*redirect is for if we want it to go back to the homepage after registering.*/
   res.redirect("/");
-});
+});*/
 
 app.get('/login', function (req, res) {
     res.render('login', {
     });
 });
 
-app.get('/userLogin', function (req, res) {
+/*app.get('/userLogin', function (req, res) {
     var username = req.body.username;
     var password = req.body.password;
 
@@ -123,4 +123,4 @@ app.get('/userLogin', function (req, res) {
     /*redirect is for if we want it to go back to the homepage after registering.*/
     res.redirect("/");
 });
-
+*/
